@@ -42,15 +42,18 @@ Console.WriteLine($"Третья цифра {num1}");*/
 //  Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным. Обязательно сделать проверку на ввод чисел меньше 1 и больше 7
 Console.WriteLine("Введите день недели");
 int number = int.Parse(Console.ReadLine()!);
-if (number > 0 && number < 8)
-{
+
+if (number < 1 && number > 7){
 Console.WriteLine($"День недели  = {number}");
-}
-if (number > 5 && number < 8 )
-{
+
+if (number > 5 && number < 8 ){
     Console.WriteLine("Выходной день");
-}
+    }
 else{
     Console.WriteLine("Будний день");
+    }
 }
+else{
+    Console.WriteLine("Ошибка ввода");
+    } 
  
